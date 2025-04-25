@@ -1,0 +1,47 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.*.local
+.pnpm-debug.log*
+
+# React
+/build
+/dist
+*.log
+*.cache
+.cache/
+.vite/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Tests
+coverage/
+*.lcov
+
+# Optional: If using Docker
+docker-compose.override.yml
+
+# Optional: If using next.js in frontend
+.next/
+
+# Optional: If using parcel
+.parcel-cache/
+
+# Optional: If using firebase functions
+functions/node_modules/
+
+# Optional: Ignore production environment files
+.env.production
