@@ -1,0 +1,25 @@
+{
+  "name": "code_editor",
+  "version": "1.0.0",
+  "description": "**CodeByte** is an online code editor and compiler that lets you write and run code directly from your browser. It supports multiple programming languages like C++, Java, Python, and more. You can also collaborate in real-time with others!",
+  "homepage": "https://github.com/vinay637851/CodeByte#readme",
+  "bugs": {
+    "url": "https://github.com/vinay637851/CodeByte/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinay637851/CodeByte.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/index.js",  
+    "client": "cd frontend && npm start",  
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "server": "node backend/index.js", 
+    "install": "npm install --legacy-peer-deps"
+  }
+}
