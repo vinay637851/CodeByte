@@ -36,8 +36,9 @@ app.listen(port,function(){
     console.log("server started on port ",port)
 })  
 
+
 app.post("/code/workplace/compile",function(req,res){
-    let {code,language,input}=req.body;
+    let {code,language,input}=req.body; 
     console.log(input) 
     if(language=="C++"){
         var envData = { OS : "windows" , cmd : "g++", options: { timeout: 5000 }};  
