@@ -20,6 +20,5 @@
     "client": "cd frontend && npm start",  
     "dev": "concurrently \"npm run client\" \"npm run server\"",
     "server": "node backend/index.js", 
-    "install": "npm install --legacy-peer-deps"
   }
 }
