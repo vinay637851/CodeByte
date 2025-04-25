@@ -16,9 +16,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node backend/index.js",  
-    "client": "cd frontend && npm start",  
+    "start": "node backend/index.js",
+    "client": "cd frontend && npm start",
     "dev": "concurrently \"npm run client\" \"npm run server\"",
     "server": "node backend/index.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
   }
 }
