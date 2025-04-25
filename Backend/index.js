@@ -1,5 +1,6 @@
 let express=require("express");
 let app=express();
+let port=process.env.PORT||3000
 let path=require("path");
 const cors = require('cors');
 let bodyParser=require('body-parser') 
@@ -31,8 +32,8 @@ app.use(fileUpload());
 
 
 
-app.listen(3000,function(){
-    console.log("server started on port 3000")
+app.listen(port,function(){
+    console.log("server started on port ",port)
 })  
 
 app.post("/code/workplace/compile",function(req,res){
