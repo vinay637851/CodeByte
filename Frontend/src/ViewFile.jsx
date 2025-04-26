@@ -30,7 +30,7 @@ function ViewFile({ folder_id, file_id, name, date }) {
 
   async function accessFileData() {
     let res = await fetch(
-      `http://localhost:3000/code/workplace/stroage/files/${folder_id}/add/access/${file_id}`,
+      `https://codebyte-51m1.onrender.com/code/workplace/stroage/files/${folder_id}/add/access/${file_id}`,
       {
         method: "GET",
       }
@@ -59,7 +59,7 @@ function ViewFile({ folder_id, file_id, name, date }) {
       editorExist = false;
       SeteditorExist(false);
       let res = await fetch(
-        `http://localhost:3000/code/workplace/stroage/files/${folder_id}/add/access/${file_id}`,
+        `https://codebyte-51m1.onrender.com/code/workplace/stroage/files/${folder_id}/add/access/${file_id}`,
         {
           method: "GET",
         }
@@ -71,7 +71,7 @@ function ViewFile({ folder_id, file_id, name, date }) {
       Seteditor(editor);
     } else {
       let res = await fetch(
-        `http://localhost:3000/code/workplace/stroage/files/${folder_id}/add/update/${file_id}`,
+        `https://codebyte-51m1.onrender.com/code/workplace/stroage/files/${folder_id}/add/update/${file_id}`,
         {
           method: "POST",
           headers: {

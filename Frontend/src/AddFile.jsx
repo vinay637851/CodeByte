@@ -8,7 +8,7 @@ function AddFile() {
     const navigate = useNavigate();
     async function handleForm(e) {
         e.preventDefault();
-        let res=await fetch(`http://localhost:3000/code/workplace/stroage/files/${id}/add/create`, {
+        let res=await fetch(`https://codebyte-51m1.onrender.com/code/workplace/stroage/files/${id}/add/create`, {
             method:"POST",
             headers:{
                 "Content-Type":"application/json"

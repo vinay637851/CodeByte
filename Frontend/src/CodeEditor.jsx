@@ -49,7 +49,7 @@ function Codebox({code,language}) {
     }
   };
   async function SendMsg() {
-    const res = await fetch("http://localhost:3000/code/workplace/compile", {
+    const res = await fetch("https://codebyte-51m1.onrender.com/code/workplace/compile", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

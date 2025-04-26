@@ -14,7 +14,7 @@ function FileList() {
         date:""
     });
     async function GetFileData(){
-        let res=await fetch(`http://localhost:3000/code/workplace/stroage/get/${id}`,{
+        let res=await fetch(`https://codebyte-51m1.onrender.com/code/workplace/stroage/get/${id}`,{
             method:"GET",
             headers:{
                 "Content-Type":"application/json"
@@ -36,7 +36,7 @@ function FileList() {
         })
     }
     async function deleteFile(folder_id,file_id){
-        let res=await fetch(`http://localhost:3000/code/workplace/stroage/files/${folder_id}/add/delete/${file_id}`,{
+        let res=await fetch(`https://codebyte-51m1.onrender.com/code/workplace/stroage/files/${folder_id}/add/delete/${file_id}`,{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
@@ -53,7 +53,7 @@ function FileList() {
         return;
     }
     async function DeleteWorkspace(){
-        let res=await fetch("http://localhost:3000/code/workplace/stroage/delete",{
+        let res=await fetch("https://codebyte-51m1.onrender.com/code/workplace/stroage/delete",{
             method:"DELETE",
             headers:{
             "Content-Type":"application/json"
