@@ -15,11 +15,10 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node backend/index.js",
-    "client": "cd frontend && npm start",
-    "dev": "concurrently \"npm run client\" \"npm run server\"",
-    "server": "node backend/index.js"
+    "start": "npm run dev",  
+    "client": "cd frontend && npm start",  
+    "dev": "concurrently \"npm run client\" \"npm run server\"",  
+    "server": "cd backend && npm start" 
   },
   "devDependencies": {
     "concurrently": "^9.1.2"

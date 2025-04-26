@@ -15,10 +15,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/code/workplace" element={<CodeEditorTerminal/>} />
+          {/* <Route path="/code/workplace" element={<CodeEditorTerminal/>} /> */}
           <Route path="/code/workplace/stroage" element={<Workspace/>}/>
-          <Route path="/code/workplace/stroage/files/:id" element={<FileList/>}/>
-          <Route path="/code/workplace/stroage/files/:id/add" element={<AddFile/>}/>
+          {/* <Route path="/code/workplace/stroage/files/:id" element={<FileList/>}/>
+          <Route path="/code/workplace/stroage/files/:id/add" element={<AddFile/>}/> */}
         </Routes>
       </BrowserRouter>
     </>
