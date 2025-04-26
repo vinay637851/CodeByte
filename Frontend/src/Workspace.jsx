@@ -12,7 +12,7 @@ function Codebase() {
     getWorkspaces()
     async function getWorkspaces(){
       try{
-        let res=await fetch("https://codebyte-51m1.onrender.com/code/workplace/stroage/get",{
+        let res=await fetch("http://localhost:3000/code/workplace/stroage/get",{
           method:"GET",
           headers:{
             "Content-Type":"application/json"
@@ -44,7 +44,7 @@ function Codebase() {
   async function handleForm(e){
     e.preventDefault();
     try{
-      let res=await fetch("https://codebyte-51m1.onrender.com/code/workplace/stroage/create",{
+      let res=await fetch("http://localhost:3000/code/workplace/stroage/create",{
         method:"POST",
         headers:{
           "Content-Type":"application/json"
@@ -74,7 +74,7 @@ function Codebase() {
   async function DeleteWorkspace(id){
     console.log(id)
     try{
-      let res=await fetch("https://codebyte-51m1.onrender.com/code/workplace/stroage/delete",{
+      let res=await fetch("http://localhost:3000/code/workplace/stroage/delete",{
         method:"DELETE",
         headers:{
           "Content-Type":"application/json"
